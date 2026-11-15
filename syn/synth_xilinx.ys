@@ -1,0 +1,3 @@
+read_verilog -I rtl rtl/riscv_defs.vh rtl/alu.v rtl/imm_gen.v rtl/regfile.v rtl/control.v rtl/branch_unit.v rtl/hazard_unit.v rtl/forwarding_unit.v rtl/riscv_core.v
+synth_xilinx -top riscv_core -family xc7
+stat
